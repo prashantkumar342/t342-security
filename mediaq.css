@@ -1,0 +1,69 @@
+@media screen and (max-width:500px) {
+  .head img {
+    width: 20vh;
+  }
+
+  .head {
+    height: 45vh;
+  }
+
+  .courses-overview .card-1 {
+    flex-direction: column;
+  }
+
+  .courses-overview .card-1 .paragraph {
+    padding: .5vh;
+
+    margin: auto auto 1vh auto;
+    font-size: 1.5vh;
+    border-left: black solid .5vh;
+  }
+
+  .courses-overview .card-1 .card-1-img img {
+    width: 20vh;
+    height: 20vh;
+  }
+
+  .nav-bar #search-bar {
+    width: 20vh;
+    padding: 0 2vh 0 2vh;
+  }
+
+  .nav-bar ul li:first-child {
+    font-size: 2vh;
+  }
+
+  .overview-home .pragraphs .pragraph-1,
+  .pragraph-2 {
+    /* outline: red solid; */
+    font-size: 1.5vh;
+    width: 100%;
+    /* border-left: white solid 2px; */
+    /* padding-left: 1vh; */
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+  .nav-bar a {
+    display: none;
+  }
+
+  .nav-bar #search-bar {
+    padding-left: 1vh;
+    /* margin: auto auto auto auto; */
+  }
+}
+
+@media screen and (max-width:900px) {
+
+  .overview-home {
+    padding: 1.5vh;
+  }
+
+  .overview-home .pragraphs {
+    /* outline: red solid; */
+    font-size: 2vh;
+    width: fit-content;
+  }
+}
