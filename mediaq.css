@@ -4,7 +4,7 @@
   }
 
   .head p {
-    font-size: 2.2vh;
+    font-size: 2vh;
     padding: 1vh;
   }
 
@@ -18,7 +18,7 @@
 
   .courses-overview .card .paragraph {
     margin: auto auto 1vh auto;
-    font-size: 1.5vh;
+    font-size: 1vh;
   }
 
   .courses-overview .card img {
@@ -135,11 +135,6 @@
     padding: 1.5vh;
   }
 
-  .courses-overview .card {
-    /* height: 20vh; */
-    background-color: rgba(56, 199, 228, 0.416);
-  }
-
   .courses-overview .paragraph {
     /* width: 100%; */
     padding: 1vh;
@@ -155,7 +150,6 @@
   }
 
   .overview-home .pragraphs {
-    /* outline: red solid; */
     font-size: 2vh;
     width: fit-content;
   }
@@ -168,9 +162,24 @@
   }
 
   .courses-overview .paragraph {
+    /* outline: red solid; */
     /* padding: 1vh; */
     width: 90%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5vh;
+  }
+
+  .courses-overview .paragraph h2 {
+    width: 95%;
+    margin: 0 auto 0 auto;
+    padding: 3vh 0 0 .5vh;
+    /* outline: green solid; */
+  }
+
+  .courses-overview .paragraph p {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    /* outline: green solid; */
+    padding: 1vh 0 0 1vh;
   }
 }

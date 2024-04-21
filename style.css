@@ -127,8 +127,9 @@
 }
 
 .overview-home .pragraphs {
+  margin-top: 2vh;
   /* padding: 1vh; */
-  font-family: monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5vh;
   width: 100%;
   /* display: flex; */
@@ -140,7 +141,7 @@
 .pragraph-2 {
   text-align: center;
   border-left: white solid 2px;
-  padding-left: 1vh;
+  /* padding-left: 2vh; */
 }
 
 .overview-home .pragraphs .signature {
@@ -244,7 +245,9 @@ footer {
 
 .logo img {
   border-radius: 50%;
+  margin-bottom: -8vh;
   width: 7vw;
+  /* height: 14vh; */
 }
 
 .bio {
@@ -254,7 +257,7 @@ footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 2vh;
   text-align: right;
-  width: 25vw
+  width: 30vw
 }
 
 .social-handles {
