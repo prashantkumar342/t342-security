@@ -1,4 +1,13 @@
 @media screen and (max-width:500px) {
+  .head h1 {
+    font-size: 5vh;
+  }
+
+  .head p {
+    font-size: 2.2vh;
+    padding: 1vh;
+  }
+
   .head img {
     width: 20vh;
   }
@@ -7,63 +16,161 @@
     height: 45vh;
   }
 
-  .courses-overview .card-1 {
-    flex-direction: column;
-  }
-
-  .courses-overview .card-1 .paragraph {
-    padding: .5vh;
-
+  .courses-overview .card .paragraph {
     margin: auto auto 1vh auto;
     font-size: 1.5vh;
-    border-left: black solid .5vh;
   }
 
-  .courses-overview .card-1 .card-1-img img {
-    width: 20vh;
-    height: 20vh;
+  .courses-overview .card img {
+    width: 15vh;
+    height: 15vh;
   }
 
   .nav-bar #search-bar {
-    width: 20vh;
-    padding: 0 2vh 0 2vh;
+    width: 10vh;
+    padding: 0 2.5vh 0 2vh;
   }
 
-  .nav-bar ul li:first-child {
-    font-size: 2vh;
-  }
+
 
   .overview-home .pragraphs .pragraph-1,
   .pragraph-2 {
-    /* outline: red solid; */
     font-size: 1.5vh;
-    width: 100%;
-    /* border-left: white solid 2px; */
-    /* padding-left: 1vh; */
   }
 
 }
 
 @media screen and (max-width:1200px) {
-  .nav-bar a {
+  .nav-menu-ul.activeNavMenu {
+    display: flex;
+  }
+
+  .nav-bar .nav-bar-ul li:last-child {
+    display: block;
+  }
+
+  .nav-bar .nav-bar-ul a {
     display: none;
   }
 
   .nav-bar #search-bar {
+    width: 30vw;
     padding-left: 1vh;
     /* margin: auto auto auto auto; */
   }
+
+  footer {
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  .first-div {
+    width: 100%;
+    border-bottom: .5vh solid white;
+    border-right: none;
+  }
+
+  .footer-text {
+    padding: 1vh;
+    font-size: 1.5vh;
+    width: 100%;
+  }
+
+  .logo {
+    /* outline: solid red 2px; */
+    margin-left: 3vh;
+    width: 10vw;
+    height: 14vh;
+    margin-bottom: -8vh;
+
+  }
+
+  .logo img {
+    border-radius: 50%;
+    width: 15vw;
+  }
+
+  .social-other {
+    padding: 0;
+    width: 100%;
+  }
+
+  .social-handles ul li {
+    padding: .5vh;
+  }
+
+  .bio {
+    font-size: 1.5vh;
+    padding: 1vh;
+    width: 100%;
+  }
+
+  .second-div {
+    width: 100%;
+  }
+
+  .other-section h3 {
+    font-size: 2vh;
+  }
+
+  .second-div .other-section {
+    width: 100%;
+  }
+
+  .other-section ul li {
+    padding: .5vh;
+  }
+
+  .other-section ul a {
+    font-size: 2vh;
+  }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
+  .nav-bar .nav-bar-ul li:first-child {
+    font-size: 2vh;
+  }
 
   .overview-home {
     padding: 1.5vh;
+  }
+
+  .courses-overview .card {
+    /* height: 20vh; */
+    background-color: rgba(56, 199, 228, 0.416);
+  }
+
+  .courses-overview .paragraph {
+    /* width: 100%; */
+    padding: 1vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vh;
+  }
+
+  .courses-overview img {
+    padding: .5vh;
+    float: left;
+    width: 20vh;
+    height: 20vh;
   }
 
   .overview-home .pragraphs {
     /* outline: red solid; */
     font-size: 2vh;
     width: fit-content;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .courses-overview .card {
+    background-color: rgba(56, 199, 228, 0.416);
+    display: flex;
+  }
+
+  .courses-overview .paragraph {
+    /* padding: 1vh; */
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
   }
 }
