@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mediaq.css">
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet" href="../css/all.css">
+  <script src="js/all.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <ul class="nav-bar-ul">
+        <li>T342-Security</li>
+        <input type="text" name="search-bar" id="search-bar" placeholder="search...">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">About me</a></li>
+        <li onclick="navMenuAppear()" id="navMenubtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+            <path
+              d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+          </svg></li>
+      </ul>
+      <ul class="nav-menu-ul">
+        <li><a href="../index.html" id="nav-menu-item">Home</a></li>
+        <div class="bar"></div>
+        <li><a href="../courses.html" id="nav-menu-item">Courses</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">Downloads</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">About me</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="content-list">
+      <ul id="linux" class="list">
+        <li data-linux="0" class="topic">linux 0</li>
+        <li data-linux="1" class="topic">linux 1</li>
+        <li data-linux="2" class="topic">linux 2</li>
+        <li data-linux="3" class="topic">linux 3</li>
+      </ul>
+    </div>
+    <div class="content-text">
+      <div class="course-content linux" id="0">
+        <h2>Linux 0</h2>
+      </div>
+      <div class="course-content linux">
+        <div class="course-content linux" id="1">
+          <h2>Linux 1</h2>
+        </div>
+        <div class="course-content linux" id="2">
+          <h2>Linux 2</h2>
+        </div>
+        <div class="course-content linux" id="3">
+          <h2>Linux 3</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

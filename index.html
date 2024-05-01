@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T342</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaq.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaq.css">
+  <link rel="stylesheet" href="css/all.css">
+  <script src="js/all.js"></script>
+
 
 </head>
 
@@ -16,8 +19,8 @@
       <ul class="nav-bar-ul">
         <li>T342-Security</li>
         <input type="text" name="search-bar" id="search-bar" placeholder="search...">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
         <li><a href="#">Downloads</a></li>
         <li><a href="#">About me</a></li>
         <li onclick="navMenuAppear()" id="navMenubtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -27,9 +30,12 @@
           </svg></li>
       </ul>
       <ul class="nav-menu-ul">
-        <li><a href="#" id="nav-menu-item">Home</a></li>
-        <li><a href="#" id="nav-menu-item">Courses</a></li>
+        <li><a href="index.html" id="nav-menu-item">Home</a></li>
+        <div class="bar"></div>
+        <li><a href="courses.html" id="nav-menu-item">Courses</a></li>
+        <div class="bar"></div>
         <li><a href="#" id="nav-menu-item">Downloads</a></li>
+        <div class="bar"></div>
         <li><a href="#" id="nav-menu-item">About me</a></li>
       </ul>
     </div>
@@ -49,6 +55,7 @@
           </p><br>
         </div>
         <div class="pragraph-2">
+
           <p>And you are there on my Web to meet the modren Technologies and learn some Technologies. Here am
             going to start Some Courses like <Strong>Operating Systems, Computer Networks, Kali linux, parrot-security
               and other debain and arch based linux's Role in cyber Security etc.</Strong>And am going to be familiar
@@ -66,7 +73,7 @@
   <main>
     <div class="courses-overview">
       <div class="card">
-        <img src="./assets/NetSec.png" alt="">
+        <img src="./assets/cloud-server.png" alt="">
         <div class="paragraph">
           <h2>Computer Network:</h2>
           <p>In the course of Computer Network i will be teach you the basics of computer
@@ -82,7 +89,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="./assets/OS.png" alt="">
+        <img src="./assets/operating-system.png" alt="">
         <div class="paragraph">
           <h2>Operating System: </h2>
           <p>In the course of <b>Operating System</b> you will learn about what is an Operating System actually ?, what
@@ -93,44 +100,8 @@
     </div>
     </div>
   </main>
-  <footer>
-    <div class="first-div">
-      <div class="footer-text">
-        <p>Follow me on Social Handle’s, get open source projects from github.</p>
-        <p>Thanks for visiting</p>
-      </div>
-      <div class="social-other">
-        <div class="bio-details">
-          <div class="logo"><img src="./assets/footer-logo.png" alt=""></div>
-          <div class="bio">
-            <h3>prashant kumar</h3>
-            <p>Cyber Security*</p>
-            <p>UX/UI designer</p>
-            <p>Frontend web development</p>
-          </div>
-        </div>
-        <div class="social-handles">
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Github</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="second-div">
-      <div class="other-section">
-        <h3>other sources and advice</h3>
-        <ul>
-          <li><a href="#">javaTpoint</a></li>
-          <li><a href="#">TCM Security</a></li>
-          <li><a href="#">Coursera</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="./main.js"></script>
+
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

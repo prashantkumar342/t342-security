@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating System</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mediaq.css">
+  <!-- <link rel="stylesheet" href="../css/courses.css"> -->
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="./courses-content.css">
+  <script src="../js/all.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <ul class="nav-bar-ul">
+        <li>T342-Security</li>
+        <input type="text" name="search-bar" id="search-bar" placeholder="search...">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">About me</a></li>
+        <li onclick="navMenuAppear()" id="navMenubtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+            <path
+              d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+          </svg></li>
+      </ul>
+      <ul class="nav-menu-ul">
+        <li><a href="../index.html" id="nav-menu-item">Home</a></li>
+        <div class="bar"></div>
+        <li><a href="../courses.html" id="nav-menu-item">Courses</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">Downloads</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">About me</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="course-material-wrapper">
+      <div class="content-list">
+        <ul class="topic-list">
+          <div class="topic-list-close">
+            <i class="fa-solid fa-xmark" onclick="courseTopicListClose()"></i>
+          </div>
+          <li data-course="0" class="topic first-topic-btn">Introduction to Operating System</li>
+          <li data-course="1" class="topic">Objectives of Operating System</li>
+          <li data-course="2" class="topic">Functions Of Operating System</li>
+          <li data-course="3" class="topic"></li>
+        </ul>
+      </div>
+      <div class="course-material">
+        <i class="fa-solid fa-bars-staggered" onclick="courseTopicListAppear()"></i>
+        <div class="course-content course first-topic" id="0">
+          <!-- <i class="fa-solid fa-bars-staggered" onclick="courseTopicListAppear()"></i> -->
+          <h2><i class="fa-solid fa-pen"></i> Intro. to Operating System</h2>
+          <p>As we know in computer technology there is two types of sowftware exists</p><br>
+          <ol>
+            <li>
+              <p><strong>Application Software :</strong>
+                An Application software is designed to perform a specific task and these programs installs in
+                Operating
+                System. (will we discuss some more talks on Application Software later in this course) </p>
+            </li>
+            <li>
+              <p><strong>System Software :</strong>
+                System Softwares are some special type of software that directly deals with hardware. e.g. System
+                softwares are designed to operate computer hardware, peripherial devices etc, System softwares are that
+                softwares
+                which provides us the feature of plug and play.
+              </p>
+            </li>
+          </ol>
+          <br>
+          <p><i class="fa-solid fa-star-of-life"></i> <b>Note: </b>Operating System is an special type of system
+            software that directly deals with hardware</p><br>
+          <h2><i class="fa-solid fa-pen"></i> What is an Operating System ?</h2>
+          <p><strong>Operating System : </strong>An <strong>Operating System</strong> is a piece of software that
+            manages all the
+            resources of a computer system both hardware and
+            software and provides an environment in which users can perform tasks by executing the applications or
+            processes in a
+            convenient and efficient manner. OS hides the complexity of the hardware by working as resource manager.</p>
+          <div class="img-center-16-9"><img src="../diagrams/os+hardware.png" alt="" class="img-16-9">
+            <p class="dia">Operating System Installed directly on hardware and makes a efficient environment to use the
+              functionality of hardware,
+              then a end user can use it without any complexity</p>
+          </div>
+          <h3><i class="fa-solid fa-circle"></i> Layered structure of operating system</h3>
+          <ul>
+            <li>
+              <p><strong>Layer 1: </strong>Computer Hardware.</p>
+            </li>
+            <li>
+              <p><strong>Layer 2: </strong>CPU Scheduling.</p>
+            </li>
+            <li>
+              <p><strong>Layer 3: </strong>Memory Management.</p>
+            </li>
+            <li>
+              <p><strong>Layer 4: </strong>Process Management</p>
+            </li>
+            <li>
+              <p><strong>Layer 5: </strong>Operating System.</p>
+            </li>
+            <li>
+              <p><strong>Layer 6: </strong>User programs / Application Software3</p>
+            </li>
+          </ul>
+        </div>
+        <div class="course-content course" id="1">
+          <h2><i class="fa-solid fa-pen"></i> Objectives Of Operating System</h2>
+          <p><strong>The main targets of an operating system are as follows :</strong></p><br>
+          <ul>
+            <li>
+              <p><strong>Convenience :</strong>An operating system improves the use of a Hardware. Operating systems
+                gives the ability to users to use systems without
+                the stress of configuring system and resource management.</p>
+            </li>
+            <li>
+              <p><strong>Efficiency :</strong>An Operating System has the ability to manage all the resources properly
+                and use them as needed. This is due to less
+                time spent on configuring the system.</p>
+            </li>
+            <li>
+              <p><strong>Ability to evolve :</strong>An operating system should be designed in such a way that it allows
+                for the effective development, testing, and
+                introduction of new features without interfering with service.</p>
+            </li>
+            <li>
+              <p><strong>Management Of System Resources :</strong>Operating systems are able to share resources fairly
+                among various processes that are running and user.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="course-content course" id="2">
+          <h2><i class="fa-solid fa-pen"></i>Functions Of Operating System</h2>
+          <ol>
+            <li>
+              <p><strong>Memory Management: </strong></p>
+              <p>Operating System Manages the primary or main memory. If any program is executed, it has to be present
+                in the memory.
+                Main memory is faster than Secondary memory and directly accessed by the CPU. When a program is executed
+                the operating
+                system allocates the required memory to the process of it and by the CPU it handles the process in an
+                efficient manner
+                after the completion of the process Operating System deallocates the memory and free up the space in
+                main memory for
+                another process.</p>
+              <ul>
+                <li>
+                  <p>Allocates and Deallocates the memory.</p>
+                </li>
+                <li>
+                  <p>Keeping the record of which part of memory is used and which process is using.</p>
+                </li>
+                <li>
+                  <p>Distributing the memory while multiprocessing etc.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>CPU Management or Scheduling:</strong></p>
+              <p>Every software that runs on a computer, whether in the background or in the frontend, is a process.
+                Processor management
+                is an execution unit in which a program operates. The operating system determines the status of the
+                processor and
+                processes, selects a job and its processor, allocates the processor to the process, and de-allocates the
+                processor after
+                the process is completed</p>
+              <p>When more than one process runs on the system the OS decides how and when a process will use the CPU.
+                Hence, the name is
+                also <strong>CPU Scheduling
+                  The OS:</strong>
+              <ul>
+                <li>
+                  <p>Manages the CPU uses by process.</p>
+                </li>
+                <li>
+                  <p>Keeps the record of CPU status</p>
+                </li>
+              </ul>
+              </p>
+              <p>
+                <strong>Certain algorithms used for CPU Scheduling in OS are as follows :</strong>
+              <ul>
+                <li>
+                  <p>First Come First Out.</p>
+                </li>
+                <li>
+                  <p>Shortest Job First.</p>
+                </li>
+                <li>
+                  <p>Round-Robin Scheduling.</p>
+                </li>
+                <li>
+                  <p>Priority-based scheduling etc</p>
+                </li>
+              </ul>
+              </p>
+              <p><strong>Purpose of CPU scheduling:</strong></p>
+              <ul>
+                <li>
+                  <p>Proper utilization of CUP is necessary. Operating System makes sure that the CPU should be as busy
+                    as possible</p>
+                </li>
+                <li>
+                  <p>Since every device should get a chance to use the processor. Hence, the OS makes sure that the
+                    devices get fair
+                    processor time
+                  </p>
+                </li>
+                <li>
+                  <p>Increasing the efficiency of the system.</p>
+                </li>
+                <li>
+                  <p>Allocates and deallocates devices to different processes</p>
+                </li>
+                <li>
+                  <p>Keeps records of the devices</p>
+                </li>
+                <li>
+                  <p>Decides which process can use which device for how much time</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>File Management:</strong></p>
+              <p>The operating system manages resource allocation and deallocation. It specifies which process receives
+                the file and for
+                how long. It also keeps track of information, location,uses,status, and so on. These groupings of
+                resources are referred
+                to as file systems. The files on a system are stored in different directories.</p>
+              <p><strong>The Operating System :</strong></p>
+              <ul>
+                <li>
+                  <p>Keeps records of the status of and locations of files</p>
+                </li>
+                <li>
+                  <p>Allocates and deallocates.</p>
+                </li>
+                <li>
+                  <p>Decides who gets the resources.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Storage management:</strong></p>
+              <p><strong>Storage management</strong>is defined as it refers to the management of the data storage
+                equipment’s that are used to store the user/computer
+                generated data. Hence it is a tool or set of processes used by an administrator to keep your data and
+                storage
+                equipment’s safe. Storage management is a process for users to optimize the use of storage devices and
+                to protect the
+                integrity of data for any media on which it resides and the category of storage
+                management generally contain the different type of subcategories covering aspects such as security,
+                virtualization and
+                more, as well as different types of provisioning or automation, which is generally made up the entire
+                storage management
+                software market.
+              </p>
+              <p><strong>The OS uses storage management for:</strong></p>
+              <ul>
+                <li>
+                  <p>Improving the performance of the data storage resources.</p>
+                </li>
+                <li>
+                  <p>It Optimizes the use of various storage devices.</p>
+                </li>
+                <li>
+                  <p>Assists businesses in storing more data on exiting hardware, speeding up the data retrieval
+                    process, preventing,
+                    preventing data loss, meeting data retention regulations, and lowering IT costs.</p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

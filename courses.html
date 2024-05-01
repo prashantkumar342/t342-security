@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T342-Courses</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaq.css">
+  <link rel="stylesheet" href="./css/courses.css">
+  <link rel="stylesheet" href="css/all.css">
+  <script src="js/all.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <ul class="nav-bar-ul">
+        <li>T342-Security</li>
+        <input type="text" name="search-bar" id="search-bar" placeholder="search...">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">About me</a></li>
+        <li onclick="navMenuAppear()" id="navMenubtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+            <path
+              d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+          </svg></li>
+      </ul>
+      <ul class="nav-menu-ul">
+        <li><a href="index.html" id="nav-menu-item">Home</a></li>
+        <div class="bar"></div>
+        <li><a href="courses.html" id="nav-menu-item">Courses</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">Downloads</a></li>
+        <div class="bar"></div>
+        <li><a href="#" id="nav-menu-item">About me</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="overview">
+      <div class="courses-head">
+        <div class="img"><img src="./assets/tecnology.png" alt=""></div>
+        <h3>Learn and skill up youself with latest informations and courses</h3>
+      </div>
+      <div class="note-info">
+        <div class="note">
+          <img src="./assets/error_notice.png" alt="">
+          <p>it's possible that all content not write by me. but the entire course is designed and managed by me.</p>
+          <P>i tried to make all courses content easy to understand and beginner friendly</P>
+        </div>
+        <div class="note">
+          <img src="./assets/pre_req.png" alt="">
+          <p><b>pre requirements : </b>before starting the any of these course let me know you some pre requirements to
+            build
+            well
+            understanding of these
+            courses.</p>
+          <p>Basics understanding of word processor softwares to manage your code well in code editor or any text
+            editor,
+            basic computer usage knowledeg etc.</p>
+        </div>
+        <div class="note">
+          <img src="./assets/pen.png" alt="">
+          <p><b>NOTE: </b> this is not necessary for you to full-fill all of these pre requriment or knowledge but if
+            you
+            do, then
+            it will
+            more easy to make yourself well understanding of these courses and this will be a good practice to learn
+            things
+            in
+            course.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="courses-list">
+      <div class="courses-cards-wrapper">
+        <div class="course-card">
+          <a href="./coursesHTML/cn.html">
+            <img src="./thumbnail/computernetwork.png" alt="">
+            <h4>Computer Networks</h4>
+            <p>Computer Network a beginner level course, including internet, protocols, ports etc. </p>
+          </a>
+        </div>
+        <div class="course-card"><a href="./coursesHTML/linux.html">
+            <img src="./thumbnail/linux-course.png" alt="">
+            <h4>Linux Basics</h4>
+            <p>Learn Basic linux like, interaction with shell, GUI & CLI etc.</p>
+          </a>
+        </div>
+        <div class="course-card"><a href="/coursesHTML/os.html">
+            <img src="./thumbnail/os.png" alt="">
+            <h4>Operating System</h4>
+            <p>Learn about diffrent types of OS, whta actually OS is ? CLI & GUI</p>
+          </a>
+        </div>
+        <div class="course-card">
+          <a href="coursesHTML/html.html">
+            <img src="./thumbnail/HTML-Document.png" alt="">
+            <h4>HTML Document</h4>
+            <p>Learn Complete HTML and do some project document</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

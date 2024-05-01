@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.nav-bar {
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+
+.nav-menu-ul {
+  border-top-right-radius: 2vh;
+  margin: 2vh 0 0 45%;
+}
+
+.fa-bars-staggered {
+  font-size: 3vh;
+  cursor: pointer;
+  padding: 1vh;
+  border-top-left-radius: 2vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: none;
+  float: left;
+}
+
+.topic-list-close {
+  display: none;
+}
+
+main {
+  width: 95vw;
+  margin: 2vh auto 0 auto;
+}
+
+.fa-circle {
+  font-size: 1vh;
+}
+
+.fa-star-of-life {
+  font-size: 2vh;
+}
+
+.course-material-wrapper {
+  background-color: rgba(255, 255, 255, 0.836);
+  display: flex;
+  /* width: 95vw; */
+  /* margin: 2vh auto 0 auto; */
+  border-radius: 2vh;
+}
+
+.content-list ul {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5vh;
+  list-style-type: none;
+  /* background-color: red; */
+  margin-top: 2vh;
+}
+
+.content-list ul li {
+  cursor: pointer;
+  /* border-bottom: 1px rgb(255, 255, 255) solid; */
+  padding: 2vh 2vh 0 2vh;
+  width: 20vw;
+}
+
+.course-material {
+  padding: 1vh;
+  margin: 2vh;
+  border-left: solid;
+}
+
+.course-material .img-16-9 {
+  width: 300px;
+}
+
+.course-material .img-center-16-9 p {
+  font-size: 1.6vh;
+  font-style: italic;
+}
+
+.course-material .img-center-16-9 {
+  text-align: center;
+  margin: 1vh auto 0 auto;
+}
+
+.course-material .course-content h2 {
+  font-size: 3vh;
+  font-family: 'Proza Libre';
+}
+
+.course-material .course-content h3 {
+  font-size: 2.5vh;
+  font-family: 'proza libre';
+}
+
+.course-material .course-content p {
+  font-size: 1.8vh;
+  font-family: 'noto sans';
+}
+
+.course-material .course-content ol {
+  margin-left: 10vh;
+}
+
+.course-material .course-content ul {
+  margin-left: 10vh;
+}
+
+.course-material .course-content {
+  display: none;
+}
+
+.course-material .course-content.first-topic {
+  display: block;
+}
+
+.course-material-wrapper .content-list .topic {
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+.first-topic-btn {
+  background-color: rgba(255, 81, 0, 0.61);
+}
+
+@media screen and (max-width: 600px) {
+  .course-material-wrapper .content-list .topic-list.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: fixed;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    width: 95vw;
+  }
+
+  .fa-xmark {
+    border-top-right-radius: 2vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fa-bars-staggered {
+    display: block;
+    margin: 0vh 1vh 1vh 0;
+    float: left;
+  }
+
+  .fa-pen {
+    margin: 0 .5vh 0 1vh;
+  }
+
+  .content-list ul {
+    margin: 0;
+  }
+
+  .content-list .topic-list {
+    border: none;
+    display: none;
+  }
+
+  .content-list .topic-list.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: fixed;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    width: 50vw;
+  }
+
+  .content-list .topic-list.active li {
+    width: fit-content;
+    color: white;
+  }
+
+  .course-material-wrapper .course-material {
+    border: none;
+    margin: 0vh;
+    padding: 0vh;
+  }
+
+  .topic-list-close {
+    width: fit-content;
+    margin-left: auto;
+    display: block;
+  }
+
+  .fa-xmark {
+    padding: 1vh 1.5vh 1vh 1.5vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 4vh;
+  }
+
+  .course-material-wrapper .course-material .course-content h2 {
+    font-size: 2.5vh;
+    padding: 1vh;
+  }
+
+  .course-material-wrapper .course-material .course-content h3 {
+    font-size: 2vh;
+    padding: 1vh;
+  }
+
+  .course-material-wrapper .course-content p {
+    font-size: 1vh;
+    padding: .5vh 1.5vh 1vh 1.5vh;
+  }
+
+  .course-material-wrapper .course-content li b {
+    font-size: 1.5vh;
+  }
+
+  .img-16-9 {
+    max-width: 200px;
+  }
+
+  .course-material-wrapper .course-material .course-content ol {
+    margin-left: 4vh;
+  }
+
+  .course-material-wrapper .course-material .course-content ul {
+    margin-left: 4vh;
+  }
+
+  .course-material-wrapper .content-list .topic {
+    font-size: 2.2vh;
+  }
+}
